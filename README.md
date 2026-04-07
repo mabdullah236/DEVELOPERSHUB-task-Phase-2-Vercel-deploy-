@@ -2,8 +2,8 @@
 # Bookstore API - Phase 2 Task
 
 ##  Live Demo
-**Production URL:** [https://developershub-task-phase-2.vercel.app/api/books/](https://developershub-task-phase-2.vercel.app/api/books/)
-*(Note: If your Vercel main link is slightly different, replace it here. Use tools like Postman or the browser to interact with the API endpoints)*
+**Production URL:** [https://developershub-task-phase-2-vercel-d.vercel.app/](https://developershub-task-phase-2-vercel-d.vercel.app/)
+*(Use tools like Postman or the browser to interact with the API endpoints)*
 
 ## Project Overview
 This project is a fully functional RESTful API built for a Bookstore. It allows users to perform CRUD (Create, Read, Update, Delete)
@@ -27,7 +27,7 @@ operations on a database of books. This was created as part of the **DEVELOPERSH
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/mabdullah236/DEVELOPERSHUB-task-Phase-2-.git](https://github.com/mabdullah236/DEVELOPERSHUB-task-Phase-2-.git)
+   git clone [https://github.com/mabdullah236/DEVELOPERSHUB-task-Phase-2-Vercel-deploy-.git](https://github.com/mabdullah236/DEVELOPERSHUB-task-Phase-2-Vercel-deploy-.git)
    cd bookstore_api
    ```
 

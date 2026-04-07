@@ -1,9 +1,9 @@
 ```markdown
 # Bookstore API - Phase 2 Task
 
-## Live Demo
-**Production URL:** [https://developershub-task-phase-2-production.up.railway.app/api/books/](https://developershub-task-phase-2-production.up.railway.app/api/books/)
-*(Note: Use tools like Postman to interact with the API endpoints)*
+##  Live Demo
+**Production URL:** [https://developershub-task-phase-2.vercel.app/api/books/](https://developershub-task-phase-2.vercel.app/api/books/)
+*(Note: If your Vercel main link is slightly different, replace it here. Use tools like Postman or the browser to interact with the API endpoints)*
 
 ## Project Overview
 This project is a fully functional RESTful API built for a Bookstore. It allows users to perform CRUD (Create, Read, Update, Delete)
@@ -14,13 +14,13 @@ operations on a database of books. This was created as part of the **DEVELOPERSH
 * **Pagination:** Limits the number of books returned per page for optimized performance.
 * **Data Validation:** Custom validation ensures `price` is positive and `isbn` is exactly 13 digits and numeric.
 * **Authentication & Permissions:** Secure API endpoints. Only logged-in users can add books, and only the owner of a book can edit or delete it.
-* **Production Ready:** Fully deployed with static file handling (WhiteNoise) and secure HTTP headers.
+* **Production Ready:** Fully deployed via Serverless architecture (Vercel) with static file handling (WhiteNoise) and secure HTTP headers.
 
 ## Technologies Used
 * **Backend Framework:** Django, Django REST Framework (DRF)
 * **Language:** Python
-* **Database:** SQLite (Local) / PostgreSQL (Production)
-* **Deployment:** Railway.app
+* **Database:** SQLite (Local) / PostgreSQL via Supabase (Production)
+* **Deployment:** Vercel (Serverless)
 * **Tools:** Postman, Git & GitHub
 
 ## How to Run Locally
@@ -43,18 +43,25 @@ operations on a database of books. This was created as part of the **DEVELOPERSH
    pip install -r requirements.txt
    ```
 
-4. **Apply database migrations:**
+4. **Environment Variables (Optional for Local):**
+   *By default, the project uses a local SQLite database and a fallback SECRET_KEY. If you want to connect to a production database locally, create a `.env` file in the root directory and add:*
+   ```env
+   SECRET_KEY=your_secret_key
+   DATABASE_URL=your_supabase_postgresql_url
+   ```
+
+5. **Apply database migrations:**
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-5. **Create a Superuser (For Authentication):**
+6. **Create a Superuser (For Authentication):**
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Run the development server:**
+7. **Run the development server:**
    ```bash
    python manage.py runserver
    ```
